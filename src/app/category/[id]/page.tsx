@@ -1,15 +1,21 @@
 import NewsCard from '@/components/NewsData/NewsCard';
 import React from 'react';
 
-// interface PageProps {
-//   params: Promise<{ id: string }>;
-// }
+interface News {
+    id: string,
+    title: string,
+    description: string,
+    category: string,
+    imageUrl: string,
+    imageAlt: string,
+    firstPublished: string
+}
 
-const CategoryNews = async ({ params }) => {
+const CategoryNews = async ({ params }: {params:{id: string}}) => {
     const { id } = await params
     const response = await fetch(`https://news-api-v2.vercel.app/api/category/${id}`)
     const data = await response.json()
-    const categoryNews = data.data
+    const categoryNews:News[]= data.data
 
     return (
         <div className='p-5'>
