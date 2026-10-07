@@ -1,9 +1,14 @@
 import React from 'react';
 
+interface MostReadNews {
+    id: string,
+    title: string,
+}
+
 const MostRead = async() => {
     const response = await fetch("https://news-api-v2.vercel.app/api/news/most-read")
     const data = await response.json()
-    const news = data.data;
+    const news:MostReadNews[] = data.data;
     return (
         <div className='py-6 px-3 mt-5 border border-gray-300 rounded-xl shadow-sm'>
             <h4 className='text-xl font-semibold mb-2'>সর্বাধিক পঠিত</h4>
