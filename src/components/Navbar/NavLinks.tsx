@@ -15,7 +15,7 @@ const NavLinks = async () => {
     const navs:Navs[] = data.data
     const filteredNavs = navs.filter(n => n.scrapable)
     return (
-        <div className='flex justify-center gap-4 text-sm mt-5'>
+        <div className='flex justify-center gap-5 text-sm mt-5'>
             <Link href={'/'}>হোম</Link>
             {filteredNavs.map((n, i) => <Link key={i} href={n.slug}>{n.title}</Link>)}
         </div>
