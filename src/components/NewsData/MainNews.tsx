@@ -20,7 +20,7 @@ const MainNews = ({ news }: { news: News[] }) => {
                 <div>
                     <Image
                         src={firstNews.imageUrl} alt={firstNews.imageAlt}
-                        width={50} height={50} className='w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-110'
+                        width={600} height={600} className='w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-110'
                     />
                 </div>
                 <div className='p-4'>

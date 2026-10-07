@@ -17,7 +17,7 @@ const NewsCard = ({ news }: { news: News }) => {
             <div className="h-auto overflow-hidden">
                 <Image
                     src={news.imageUrl} alt={news.imageAlt}
-                    width={50} height={50} className='w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-110'
+                    width={500} height={500} className='w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-110'
                 />
             </div>
             <div className='p-4'>

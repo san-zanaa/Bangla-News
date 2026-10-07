@@ -1,4 +1,3 @@
-import Marquee from "@/components/Navbar/Marquee";
 import MainNews from "@/components/NewsData/MainNews";
 import MostRead from "@/components/NewsData/MostRead";
 import NewsCard from "@/components/NewsData/NewsCard";
@@ -26,7 +25,6 @@ export default async function Home() {
 
   return (
     <div>
-      <Marquee />
 
       <div className="grid grid-cols-1 max-w-7xl mx-auto lg:grid-cols-3">
         <div className="lg:col-span-2 w-full">
