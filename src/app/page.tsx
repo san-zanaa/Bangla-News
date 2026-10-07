@@ -1,5 +1,6 @@
 import Marquee from "@/components/Navbar/Marquee";
 import MainNews from "@/components/NewsData/MainNews";
+import MostRead from "@/components/NewsData/MostRead";
 import NewsCard from "@/components/NewsData/NewsCard";
 
 interface OtherSection {
@@ -44,7 +45,9 @@ export default async function Home() {
           </div>
         </div>
 
-        <div className="col-span-1"></div>
+        <div className="col-span-1 px-3">
+          <MostRead />
+        </div>
       </div>
     </div>
   );

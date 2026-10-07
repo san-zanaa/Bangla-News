@@ -15,7 +15,7 @@ const MainNews = ({ news }: { news: News[] }) => {
     const [firstNews, ...otherNews] = news
 
     return (
-        <div className='h-auto p-6 flex flex-col gap-4 lg:flex-row'>
+        <div className='h-auto p-5 flex flex-col gap-4 lg:flex-row'>
             <div className='w-full lg:w-1/2 border border-gray-300 rounded-xl shadow-sm overflow-hidden cursor-pointer'>
                 <div>
                     <Image
